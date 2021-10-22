@@ -1,10 +1,40 @@
 @media screen  and (max-width:990px){
+    .heroContainer{
+        .heroText{
+            top:50% !important;
+            left:50% !important;
+            transform: translate(-50%,-50%) !important;
+            width:90vw !important;
+            text-align: center !important;
+            h1{
+                font-size:10vw !important;
+            }
+            button{
+                transform-origin:center !important;
+            }
+        }
+    }
+    .introSection{
+        width:90vw !important;
+        margin:5rem auto !important;
+        h1{
+            font-size:10vw !important;
+        }
+    }
+    .galleryContainer{
+        margin:5rem auto !important;
+        .gallery{
+            grid-template-columns: 1fr !important;
+        }
+    }
     .footerContainer{
         width:100vw !important;
         flex-wrap:wrap;
         background:linear-gradient(35deg,blue,#00ccff);
         color:white !important;
+        margin:0 auto 0 auto !important;
         padding-top:2rem;
+        padding-bottom:1rem;
         .footerLeft{
             ul:first-child{
                 display:none;

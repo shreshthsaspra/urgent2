@@ -1,34 +1,10 @@
 import React from 'react'
 
-const One = () => {
-
-
-    const array=[{
-        key:1,
-        title:"Lorem ipsum dolor sit amet",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nihil, quo dolorum beatae sed itaque praesentium quibusdam! Aut, repellendus tempora!",
-        url:"https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    },{
-        key:2,
-        title:"Lorem ipsum dolor sit amet",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nihil, quo dolorum beatae sed itaque praesentium quibusdam! Aut, repellendus tempora!",
-        url:"https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    },{
-        key:3,
-        title:"Lorem ipsum dolor sit amet",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nihil, quo dolorum beatae sed itaque praesentium quibusdam! Aut, repellendus tempora!",
-        url:"https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    },{
-        key:4,
-        title:"Lorem ipsum dolor sit amet",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nihil, quo dolorum beatae sed itaque praesentium quibusdam! Aut, repellendus tempora!",
-        url:"https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    }]
-     
+const Two = () => {
     return (
-        <div className="specificContainer">
+            <div className="specificContainer">
                 <div className="head">
-                <h1>施工実績</h1>
+                <h1>会社案内</h1>
                 </div>
                 <div className="body">
                     <h1>Business</h1>
@@ -64,4 +40,4 @@ const One = () => {
     )
 }
 
-export default One
+export default Two

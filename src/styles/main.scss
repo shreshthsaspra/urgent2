@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding:0;
     margin:0;
@@ -7,7 +8,7 @@
 @import "mobile";
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:noto sans display;
 }
 
 ul{
@@ -54,7 +55,9 @@ $basic:blue;
        display:grid;
        place-items: center;
        height:70vh;
-       background:url("https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center no-repeat;
+       background:url("https://en.pimg.jp/047/932/176/1/47932176.jpg") center ;
+       background-size:cover;
+       color:White;
    }
    >p{
        margin:5rem;
@@ -151,11 +154,13 @@ $basic:blue;
 
 .specificContainer{
     .head{
-        height:20vh;
+        height:30vh;
         display:grid;
         place-items:center;
-        background:url("https://images.pexels.com/photos/5637572/pexels-photo-5637572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
-        color:white;
+        background:url("https://en.pimg.jp/063/322/879/1/63322879.jpg")  center;
+        color:black;
+        font-size:2frem;
+        background-size:cover;
     }
     .body{
         width:80vw;
@@ -164,6 +169,7 @@ $basic:blue;
         h1{
           margin:2rem;
           display:inline-block;
+          text-transform: uppercase;
           background: -webkit-linear-gradient(180deg,$basic, rgb(33, 166, 206));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -184,6 +190,7 @@ $basic:blue;
             }
             >div{
                 perspective:1000px;
+                
                 width:60%;
                 height:40vh;
                 margin-right:1rem;
@@ -238,9 +245,11 @@ $basic:blue;
     width:90vw;
     margin:5rem auto;
     display:flex;
+    align-items: center;
     justify-content: space-between;
     .footerLeft{
         display:flex;
+        flex-direction:column;
         ul{
             margin-right:5rem;
             li{
@@ -273,6 +282,32 @@ $basic:blue;
     }
 
 }
+.intro2container{
+   width:80vw;
+   margin:10rem auto;
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   background:rgb(245, 245, 245);
+   padding:1rem;
+   border-radius:0.5rem;
+   box-shadow:1px 1px 10px rgba(0, 0, 0, 0.466);
+   .text{
+       flex:1;
+    //    margin:5rem;
+       text-align:Center;
+    //    p:first-child{
+    //        text-align:center;       
+    //    }
+       h2{
+           text-align:Center;
+       }
+       button{
+
+           margin:1rem auto 0 auto;
+       }
+   }
+}
 
 .galleryContainer{
     width:90vw;
@@ -280,10 +315,11 @@ $basic:blue;
     .gallery{
         margin:0 auto;
         display: grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr ;
         grid-gap:5rem;
         .galleryItem{
-            height:40vh;
+            height:50vh;
+
             border-radius:0.5rem;
             overflow:hidden;
             position:relative;
@@ -294,8 +330,8 @@ $basic:blue;
             }
             .text{
                 position:Absolute;
-                left:-100%;
-                top:0;
+                left:0%;
+                bottom:0%;
                 height:100%;
                 width:100%;
                 color:white;
@@ -303,9 +339,10 @@ $basic:blue;
                 background:linear-gradient(90deg,rgba(0, 0, 0, 0.616),transparent);
                 >div{
                     position:Absolute;
-                    top:50%;
-                    width:80%; 
-                    transform:translate(0,-50%);
+                    bottom:5%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    text-align:Center;
                     padding:0 1rem;
                 }
             }
@@ -313,7 +350,7 @@ $basic:blue;
             &:hover{
                 box-shadow:1px 1px 20px rgba(59, 59, 59, 0.589);
                 .text{
-                    left:00%;
+                    font-size:1.2rem;
                 }
                 img{
                     filter:blur(5px);
@@ -340,6 +377,22 @@ $basic:blue;
     }
 }
 
+.newsContainer{
+    background:rgba(0, 0, 0, 0.651);
+    padding:2rem;
+    width:80vw;
+    margin:5rem auto;
+    display: flex;
+    align-items: center;
+    color:white;
+    h2 {
+        padding:1rem;
+        border-right:2px solid orange;
+    }
+    p{
+        padding-left:1rem;
+    }
+}
 
 .heroContainer{
   width:100%;
@@ -356,12 +409,12 @@ $basic:blue;
       z-index:-1;
   }
   .heroText{
-      width:45%;
+      width:60%;
       color:white;
       position:absolute;
       top:50%;
-      left:5%;
-      transform:translate(0%,-50%);
+      left:50%;
+      transform:translate(-50%,-50%);
       background:rgba(32, 32, 32, 0.288);
       backdrop-filter: blur(5px);
       padding:2rem;
@@ -369,6 +422,7 @@ $basic:blue;
       h1{
           font-size:4vw;
           margin-bottom:2rem;
+          text-align:Center;
       }
       button{
           margin-top:2rem;

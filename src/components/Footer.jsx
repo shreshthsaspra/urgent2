@@ -9,29 +9,35 @@ const Footer = () => {
     return (
         <div className="footerContainer">
             <div className="footerLeft">
-                <ul>
-                    <li><Link to="/">Lorem, ipsum dolor.</Link></li>
+                <h2>0000-000-0000</h2>
+                
+                <ul style={{display:"flex"}}>
+                    <li>[営業時間］</li>
+                    <li style={{fontWeight:"bold"}}>00：00～00：00/［</li>
+                    <li>定休日］</li>
+                    <li>〇、〇</li>
+                    {/* <li><Link to="/">Lorem, ipsum dolor.</Link></li>
                     <li><Link to="/">Lorem, ipsum dolor.</Link></li>
                     <li><Link to="/">Services</Link></li>
                     <li><Link to="/">Lorem, ipsum dolor.</Link></li>
-                    <li><Link to="/">Services</Link></li>
+                    <li><Link to="/">Services</Link></li> */}
                 </ul>
-                <ul>
+                {/* <ul>
                     <li><Link to="/">Lorem, ipsum dolor.</Link></li>
                     <li><Link to="/">Lorem, ipsum dolor.</Link></li>
                     <li><Link to="/">Services</Link></li>
                     <li><Link to="/">Lorem, ipsum dolor.</Link></li>
                     <li><Link to="/">Services</Link></li>
-                </ul>
+                </ul> */}
             </div>
             <div  className="footerRight">
-                <h1>Lorem, ipsum.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint qui ipsam voluptate. Doloribus totam deserunt sequi. Odit illum sint pariatur.</p>
-                <ul>
+                <h1>川口工務店</h1>
+                <p>© 川口工務店 ALL RIGHTS RESERVED.</p>
+                {/* <ul>
                     <li><Link to="/"><FacebookIcon/></Link></li>
                     <li><Link to="/"><TwitterIcon/></Link></li>
                     <li><Link to="/"><InstagramIcon/></Link></li>
-                </ul>
+                </ul> */}
             </div>
 
         </div>
