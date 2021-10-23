@@ -31,7 +31,7 @@ const Footer = () => {
                 </ul> */}
             </div>
             <div  className="footerRight">
-                <h1>川口工務店</h1>
+                <h1 style={{cursor:"pointer"}} onClick={()=>window.location.href="/"}>川口工務店</h1>
                 <p style={{color:"black"}}>© 川口工務店 ALL RIGHTS RESERVED.</p>
                 {/* <ul>
                     <li><Link to="/"><FacebookIcon/></Link></li>

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Slide} from "react-reveal"
 
 const Gallery = () => {
  
@@ -35,16 +36,18 @@ const Gallery = () => {
             <div className="gallery">
               {array.map((item,key)=>{
                  return(
-                     <div className="galleryItem" key={key}
-                     onClick={()=>window.location.href=item.link}
-                     style={{cursor:"pointer"}}>
-                           <img src={item.imgUrl} key="GALLERY IMAGE"/>
-                           <div className="text">
-                               <div>
-                                <h1>{item.title}</h1>
-                               </div>
-                           </div>
-                     </div>
+                     <Slide up>
+                        <div className="galleryItem" key={key}
+                        onClick={()=>window.location.href=item.link}
+                        style={{cursor:"pointer"}}>
+                            <img src={item.imgUrl} key="GALLERY IMAGE"/>
+                            <div className="text">
+                                <div>
+                                    <h1>{item.title}</h1>
+                                </div>
+                            </div>
+                        </div>
+                     </Slide>
                  )
               })}
             </div>

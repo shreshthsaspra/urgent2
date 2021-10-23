@@ -11,42 +11,42 @@ const Contact = () => {
                  <div>
                      <div>
                          <p>お名前</p>
-                         <span>*</span>
+                         <span>必須</span>
                      </div>
                      <input type="text" required/>
                  </div>
                  <div>
                      <div>
                          <p>フリガナ</p>
-                         <span>*</span>
+                         <span>必須</span>
                      </div>
                      <input type="text" required/>
                  </div>
                  <div>
                      <div>
                          <p>メールアドレス（半角）</p>
-                         <span>*</span>
+                         <span>必須</span>
                      </div>
                      <input type="text" required/>
                  </div>             
                 <div>
                      <div>
                          <p>お電話番号（半角）</p>
-                         <span>*</span>
+                         <span>必須</span>
                      </div>
                      <input type="text" required/>
                 </div>
                 {/* <div>
                      <div>
                          <p></p>
-                         <span>*</span>
+                         <span>必須</span>
                      </div>
                      <input type="text" required/>
                  </div> */}
                  <div>
                      <div>
                          <p>お問い合わせ内容</p>
-                         <span>*</span>
+                         <span>必須</span>
                      </div>
                      <textarea type="text" rows="10" required>
                     </textarea>
@@ -60,9 +60,9 @@ const Contact = () => {
                         *本フォームからお客様が記入登録された個人情報は、ご返答のためのメール送信電話連絡以外の目的で利用保管し、第三者に開示提供することはありません。
                         本フォームでのお客様の個人情報はSSL暗号化により保護されます。ロ個人情報の取扱いに同意する。
                         /</p>
-                     <div>
+                     <div style={{cursor:"pointer"}}>
                         <input type="checkbox" id="scales" name="scales"/>
-                        <label for="scales">Lorem ipsum dolor sit amet.</label>
+                        <label for="scales" style={{cursor:"pointer"}}>​​個人情報の取扱いに同意する。</label>
                      </div>
                 </div>
                 <center>

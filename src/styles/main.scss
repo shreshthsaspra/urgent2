@@ -38,6 +38,7 @@ $basic:blue;
     border-radius:0.5rem;
     border:none;
     border:1px solid transparent;
+    cursor:pointer !important;
 }
 .std-button-border{
     color:$basic;
@@ -103,10 +104,13 @@ $basic:blue;
                    font-weight:bold;
                }
                span{
-                   color:rgb(204, 0, 0);
+                   color:white;
+                   background:Red;
                    display:inline-block;
                    margin-right:1rem;
-                   font-size:2rem;  
+                   font-size:0.8rem;
+                   padding:0.3rem;
+                   border-radius:0.3rem;
                }
            }
            input{
@@ -306,6 +310,9 @@ $basic:blue;
    padding:1rem;
    border-radius:0.5rem;
    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.466);
+   >button{
+    display:none !important;
+   }
    .text{
        flex:1;
     //    margin:5rem;
@@ -317,7 +324,7 @@ $basic:blue;
            text-align:Center;
        }
        button{
-
+           display:flex;
            margin:1rem auto 0 auto;
        }
    }
@@ -406,6 +413,7 @@ $basic:blue;
     p{
         padding-left:1rem;
     }
+
 }
 
 .heroContainer{
