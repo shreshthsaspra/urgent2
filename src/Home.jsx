@@ -26,7 +26,7 @@ const Home = () => {
                    <p style={{textTransform:"uppercase"}}>Business</p>
                    <h2>事業内容 </h2>
                    {/* <p>結換ゅょ人福ホエクハ廃示ムイ国未リス良指語ンい雲病馨ずるりリ暮創ト航大ニツミ宝必じラ中明スフヱ養帯ぜ重瀬誇誤郡りへさ。</p> */}
-                   <button onClick={()=>window.location.href="/施工実績"} className="std-button-fill" style={{display:'flex',alignItems:"center"}}>View More<KeyboardArrowRightIcon/></button>
+                   <button onClick={()=>window.location.href="/事業内容"} className="std-button-fill" style={{cursor:"pointer",display:'flex',alignItems:"center"}}>View More<KeyboardArrowRightIcon/></button>
                </div>
                <div>
                    <img src="https://en.pimg.jp/082/150/724/1/82150724.jpg" alt="Intro To Box Image"/>

@@ -1,4 +1,80 @@
 @media screen  and (max-width:990px){
+    .specificContainer{
+        .bodySec{
+            padding-top:2rem !important;
+            >div{
+                perspective: none !important;
+                flex-direction:column !important;
+                margin:0 !important;
+                >h2{
+                    display:block !important;
+                    margin-bottom:1rem;
+                }
+                .image{
+                    margin-right:0 !important;
+                }
+                .text{
+                    margin:2rem !important; 
+                    width:90vw !important;
+                    text-align:Center;
+                    h2{
+                        display:none;
+                    }
+                }
+                &:hover{
+                   .image{
+                       img{
+                           transform:rotateY(0) !important;
+                       }
+                   }
+                   .text{
+                       transform: rotateY(0) !important;
+                   }
+                }
+             }
+        }
+    }
+    .navbarContainer{
+        position:relative;
+        width:100% !important;
+        z-index:10 !important;
+        padding:1rem;
+
+        .navbarControls{
+            display:block !important;
+        }
+        .navbarRight{
+            z-index:9 !important;
+            background:rgb(247, 247, 247);
+            position:absolute;
+            top:-500%;
+            left:0;
+            flex-direction:column;
+            width:100% !important;
+            justify-content: flex-end !important;
+            margin:0 !important;
+            border-bottom:1px solid black;
+            transition:all 0.2s ease;
+
+            ul{
+                flex-direction: column;
+                align-items:stretch;
+                justify-content: stretch;
+                width:100%;
+                a{
+                    padding:0.5rem 1rem !important;
+                    margin:0rem !important;
+                }
+            }
+            >div{
+                background:rgb(247, 247, 247);
+                width:100%;
+                button{
+                    margin:0.5rem  !important;
+                }
+            }
+        }
+    }
     .heroContainer{
         .heroText{
             top:50% !important;
@@ -40,7 +116,8 @@
                 display:none;
             }
             ul{
-                padding:1rem;
+                padding:1rem 0;
+                flex-direction: column !important;
                 li{
                     a{
                         font-size:1rem !important;
@@ -52,7 +129,6 @@
         }
         .footerRight{
             width:100vw !important;
-            padding:1rem !important;
         }
     }
     .contactContainer{
@@ -77,5 +153,8 @@
                 float:right;
             }
         }
+    }
+    .gridGallery{
+        grid-template-columns: 1fr !important;
     }
 }

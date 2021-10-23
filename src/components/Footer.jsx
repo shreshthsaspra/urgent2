@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div  className="footerRight">
                 <h1>川口工務店</h1>
-                <p>© 川口工務店 ALL RIGHTS RESERVED.</p>
+                <p style={{color:"black"}}>© 川口工務店 ALL RIGHTS RESERVED.</p>
                 {/* <ul>
                     <li><Link to="/"><FacebookIcon/></Link></li>
                     <li><Link to="/"><TwitterIcon/></Link></li>

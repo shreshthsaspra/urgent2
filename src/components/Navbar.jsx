@@ -1,13 +1,21 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import MenuIcon from '@mui/icons-material/Menu';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 const Navbar = () => {
+
+    const showHideNav=()=>{
+        if(document.getElementsByClassName("navbarRight")[0].style.top==="-500%"){
+            document.getElementsByClassName("navbarRight")[0].style.top="100%";
+        }
+        else
+            document.getElementsByClassName("navbarRight")[0].style.top="-500%";
+
+    }
     return (
         <div className="navbarContainer">
-            <h2>川口工務店</h2>
+            <h2 style={{cursor:"pointer"}} onClick={()=>window.location.href="/"}>川口工務店</h2>
             <div className="navbarControls">
-               <MenuIcon/>
+               <MenuIcon onClick={showHideNav}/>
             </div>
 
             <div className="navbarRight">
@@ -20,7 +28,7 @@ const Navbar = () => {
                 <div>
                     {/* <button className="std-button-border">Signin</button> */}
                     {/* <LocalPhoneIcon style={{marginRight:"0.5rem"}}/> */}
-                    <button onClick={()=>window.location.href='/contact'} className="std-button-fill" style={{display:"flex",alignItems:"center"}}>お問い合わせ</button>
+                    <button  onClick={()=>window.location.href='/お問い合わせ'} className="std-button-fill" style={{cursor:"pointer",display:"flex",alignItems:"center"}}>お問い合わせ</button>
                 </div>
             </div>
         </div>

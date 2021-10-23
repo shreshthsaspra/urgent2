@@ -7,34 +7,46 @@ const Two = () => {
                 <h1>会社案内</h1>
                 </div>
                 <div className="body">
-                    <h1>Business</h1>
-                    <p>明えッげわ図1芸キル作毎従ッせーひ最41討ケチ内改せリラみ保夜ロア典指ニヘアフ丈7将ア飛合づみラ月府ヨユ両直ク改昇ルヌ載君恵末昇ぎ。操言コオタ期医ゃな来律け豊車しなと織抱ルぐ図大天にの検一ヲ条方べ万善ケコロカ駐37味でくっゆ。早ぴでぎ情降命リむはや棋構雪以せに市台アキラ最護でラめや禁38張再でほレ楽兵節稿ふ度覚カツリ権藤甲避誌ぽぜわ。</p>
+                    <h1>川口工務店</h1>
+                    <p>埼玉県を中心に、屋根・外壁リフォームの分野で活動しています。</p>
                 </div>
-                <div className="bodySec">
-                <div>
+                <div className="sepsep">
                     <div>
-                        <img src="https://en.pimg.jp/069/491/512/1/69491512.jpg" alt="LIST ITEM 1"/>
+                        <span>電話番号</span>
+                        <p>0000-0000-000 </p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat maiores ad quos esse vel dignissimos ullam hic modi? Earum.</p>
-                </div>
-                <div>
                     <div>
-                        <img src="https://en.pimg.jp/063/321/116/1/63321116.jpg" alt="LIST ITEM 1"/>
+                        <span>Fax番号</span>
+                        <p>0000-0000-000 </p>
+                    </div>                    <div>
+                        <span>所在地 </span>
+                        <p>0000-0000-000 </p>
+                    </div>                    <div>
+                        <span>本社</span>
+                        <p>0000-0000-000 </p>
+                    </div>                    <div>
+                        <span>営業時間</span>
+                        <p>00：00〜00：00</p>
+                    </div>                    <div>
+                        <span>定休日</span>
+                        <p>○曜日、祝日</p>
+                    </div>                    <div>
+                        <span>対応エリア</span>
+                        <p>関東圏内（埼玉東京千葉、神奈川、茨城栃木群馬静岡） </p>
+                    </div>                    <div>
+                        <span>資本金</span>
+                        <p>00円</p>
+                    </div>                    <div>
+                        <span>創業</span>
+                        <p>0000年00月00日</p>
+                    </div>                    <div>
+                        <span> 従業員数</span>
+                        <p>00人</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat maiores ad quos esse vel dignissimos ullam hic modi? Earum.</p>
-                </div>       
-                <div>
                     <div>
-                        <img src="https://en.pimg.jp/068/835/711/1/68835711.jpg" alt="LIST ITEM 1"/>
+                        <span> 主要取引銀行</span>
+                        <p>○○銀行</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat maiores ad quos esse vel dignissimos ullam hic modi? Earum.</p>
-                </div>                
-                <div>
-                    <div>
-                        <img src="https://en.pimg.jp/055/073/049/1/55073049.jpg" alt="LIST ITEM 1"/>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat maiores ad quos esse vel dignissimos ullam hic modi? Earum.</p>
-                </div>
                 </div>
         </div>
     )

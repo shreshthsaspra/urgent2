@@ -7,6 +7,93 @@
 }
 
 @media screen and (max-width: 990px) {
+  .specificContainer .bodySec {
+    padding-top: 2rem !important;
+  }
+  .specificContainer .bodySec > div {
+    -webkit-perspective: none !important;
+            perspective: none !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin: 0 !important;
+  }
+  .specificContainer .bodySec > div > h2 {
+    display: block !important;
+    margin-bottom: 1rem;
+  }
+  .specificContainer .bodySec > div .image {
+    margin-right: 0 !important;
+  }
+  .specificContainer .bodySec > div .text {
+    margin: 2rem !important;
+    width: 90vw !important;
+    text-align: Center;
+  }
+  .specificContainer .bodySec > div .text h2 {
+    display: none;
+  }
+  .specificContainer .bodySec > div:hover .image img {
+    -webkit-transform: rotateY(0) !important;
+            transform: rotateY(0) !important;
+  }
+  .specificContainer .bodySec > div:hover .text {
+    -webkit-transform: rotateY(0) !important;
+            transform: rotateY(0) !important;
+  }
+  .navbarContainer {
+    position: relative;
+    width: 100% !important;
+    z-index: 10 !important;
+    padding: 1rem;
+  }
+  .navbarContainer .navbarControls {
+    display: block !important;
+  }
+  .navbarContainer .navbarRight {
+    z-index: 9 !important;
+    background: #f7f7f7;
+    position: absolute;
+    top: -500%;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    margin: 0 !important;
+    border-bottom: 1px solid black;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .navbarContainer .navbarRight ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    width: 100%;
+  }
+  .navbarContainer .navbarRight ul a {
+    padding: 0.5rem 1rem !important;
+    margin: 0rem !important;
+  }
+  .navbarContainer .navbarRight > div {
+    background: #f7f7f7;
+    width: 100%;
+  }
+  .navbarContainer .navbarRight > div button {
+    margin: 0.5rem  !important;
+  }
   .heroContainer .heroText {
     top: 50% !important;
     left: 50% !important;
@@ -50,7 +137,11 @@
     display: none;
   }
   .footerContainer .footerLeft ul {
-    padding: 1rem;
+    padding: 1rem 0;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   .footerContainer .footerLeft ul li a {
     font-size: 1rem !important;
@@ -58,7 +149,6 @@
   }
   .footerContainer .footerRight {
     width: 100vw !important;
-    padding: 1rem !important;
   }
   .contactContainer > p {
     margin: 1rem;
@@ -83,6 +173,10 @@
     margin: 3rem 0;
     float: right;
   }
+  .gridGallery {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
 }
 
 body {
@@ -96,6 +190,10 @@ ul {
 img {
   display: block;
   width: 100%;
+}
+
+a {
+  cursor: pointer;
 }
 
 .std-button-fill {
@@ -297,7 +395,7 @@ img {
 }
 
 .specificContainer .bodySec {
-  margin: 10rem auto;
+  margin: 0 auto;
   width: 60vw;
   border-top: 2px solid blue;
 }
@@ -314,22 +412,28 @@ img {
           perspective: 1000px;
 }
 
-.specificContainer .bodySec > div p {
+.specificContainer .bodySec > div > h2 {
+  display: none;
+}
+
+.specificContainer .bodySec > div .text {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.specificContainer .bodySec > div .text p {
   font-size: 1.1rem;
 }
 
-.specificContainer .bodySec > div > div {
+.specificContainer .bodySec > div .image {
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  width: 60%;
-  height: 40vh;
   margin-right: 1rem;
 }
 
-.specificContainer .bodySec > div > div img {
-  height: 100%;
+.specificContainer .bodySec > div .image img {
+  height: 15rem;
+  width: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
@@ -339,14 +443,14 @@ img {
           transform-style: preserve-3d;
 }
 
-.specificContainer .bodySec > div:hover > div img {
+.specificContainer .bodySec > div:hover .image img {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
   -webkit-transform: rotateY(20deg);
           transform: rotateY(20deg);
 }
 
-.specificContainer .bodySec > div:hover p {
+.specificContainer .bodySec > div:hover .text {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
   -webkit-transform: rotateY(-20deg);
           transform: rotateY(-20deg);
@@ -364,19 +468,19 @@ img {
   margin-left: 1rem;
 }
 
-.specificContainer .bodySec > div:nth-of-type(even):hover p {
+.specificContainer .bodySec > div:nth-of-type(even):hover .text {
   -webkit-transform: rotateY(20deg);
           transform: rotateY(20deg);
 }
 
-.specificContainer .bodySec > div:nth-of-type(even):hover img {
+.specificContainer .bodySec > div:nth-of-type(even):hover .image img {
   -webkit-transform: rotateY(-20deg);
           transform: rotateY(-20deg);
 }
 
 .footerContainer {
-  width: 90vw;
-  margin: 5rem auto;
+  width: 100%;
+  padding: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,6 +490,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: linear-gradient(35deg, blue, #00ccff);
+  color: white;
 }
 
 .footerContainer .footerLeft {
@@ -636,6 +742,10 @@ img {
   margin: 0 auto;
 }
 
+.navbarContainer .navbarControls {
+  display: none;
+}
+
 .navbarContainer .navbarRight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,5 +773,50 @@ img {
 
 .navbarContainer .navbarRight > div button {
   margin: 0 1rem;
+}
+
+.sepsep {
+  width: 30rem;
+  margin: 5rem auto;
+}
+
+.sepsep > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  margin: 0.5rem 0;
+}
+
+.sepsep > div span {
+  font-weight: bold;
+  text-align: right;
+}
+
+.gridGallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  width: 80vw;
+  margin: 5rem auto;
+}
+
+.gridGallery > div {
+  outline: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.gridGallery > div img {
+  border-radius: 0.5rem;
+}
+
+.gridGallery > div p {
+  text-align: center;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
