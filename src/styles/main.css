@@ -7,6 +7,13 @@
 }
 
 @media screen and (max-width: 990px) {
+  .sepsep {
+    width: 100vw !important;
+  }
+  .sepsep > div {
+    -ms-grid-columns: 0.3fr 0.7fr !important;
+        grid-template-columns: 0.3fr 0.7fr !important;
+  }
   .newsContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
